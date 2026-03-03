@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/incidents/[id]/approve/route": "app/api/incidents/[id]/approve/route.js",
+  "/api/incidents/[id]/route": "app/api/incidents/[id]/route.js",
+  "/api/incidents/route": "app/api/incidents/route.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/incidents/[id]/page": "app/incidents/[id]/page.js",
+  "/page": "app/page.js"
+}

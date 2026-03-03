@@ -1,0 +1,19 @@
+{
+  "app": {
+    "[project]/Documents/cityboy/aegis_sre/app/_not-found/page": [
+      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
+    ],
+    "[project]/Documents/cityboy/aegis_sre/app/dashboard/page": [
+      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
+    ],
+    "[project]/Documents/cityboy/aegis_sre/app/incidents/[id]/page": [
+      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
+    ],
+    "[project]/Documents/cityboy/aegis_sre/app/page": [
+      "static/media/0c795a286deabae8-s.p.b6c48e4e.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

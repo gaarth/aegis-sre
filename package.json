@@ -1,0 +1,51 @@
+{
+  "name": "cityboy",
+  "version": "1.0.0",
+  "description": "Sentinel Governor (SG-1) — Agentic SRE Control Plane",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "migrate": "node scripts/apply-migrations.mjs",
+    "gen:types": "npx supabase gen types typescript --project-id ekgrkamujzzjzksdpkeg > lib/database.types.ts",
+    "deploy:functions": "npx supabase functions deploy process-incident --no-verify-jwt --project-ref ekgrkamujzzjzksdpkeg",
+    "serve:functions": "npx supabase functions serve process-incident --env-file .env.local",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "framer-motion": "^12.34.4",
+    "groq-sdk": "^0.19.0",
+    "lenis": "^1.3.18-dev.0",
+    "lucide-react": "^0.576.0",
+    "next": "^15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "unicornstudio-react": "^2.0.1-1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/pg": "^8.11.11",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "^15.2.1",
+    "pg": "^8.14.0",
+    "postcss": "^8.5.3",
+    "supabase": "^2.20.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaarth/cityboy.git"
+  },
+  "license": "ISC"
+}

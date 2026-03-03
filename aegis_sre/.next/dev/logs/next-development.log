@@ -1,0 +1,509 @@
+[00:00:02.303] Server  LOG     ✓ Ready in 1687ms
+[00:00:08.215] Server  LOG     ○ Compiling / ...
+[00:00:10.292] Server  ERROR   ⨯ ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:00:13.678] Browser ERROR   uncaughtError: Error: ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:00:14.501] Browser INFO    [TronLink] TronWeb is already initiated. TronLink will overwrite the current instance
+[00:00:14.501] Browser INFO    Provider initialised
+[00:00:14.501] Browser INFO    Provider initialised
+[00:00:14.501] Browser INFO    Provider initialised
+[00:00:14.501] Browser INFO    TronLink initiated
+[00:00:14.502] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:00:14.502] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:00:14.627] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:00:15.508] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:00:15.508] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:00:30.735] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:00.631] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:32.635] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:35.020] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:36.065] Server  ERROR   ⨯ ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:01:36.744] Browser ERROR   uncaughtError: Error: ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:01:36.940] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:36.940] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:38.127] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:38.159] Server  ERROR   ⨯ ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:01:38.785] Browser ERROR   uncaughtError: Error: ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+
+
+[00:01:38.968] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:38.968] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:40.068] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:40.181] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:40.526] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:40.526] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:44.324] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:45.641] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:45.641] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:48.631] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:01:59.638] Browser ERROR   ./Documents/cityboy/aegis_sre/app/globals.css:2044:8
+Parsing CSS source code failed
+  2042 |   initial-value: 0;
+  2043 | }
+> 2044 | @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+       |        ^
+  2045 | :root {
+  2046 |   --radius: 28px;
+  2047 |   --background: #05020A;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./Documents/cityboy/aegis_sre/app/globals.css [Client Component Browser]
+    ./Documents/cityboy/aegis_sre/app/layout.tsx [Server Component]
+[00:02:03.971] Server  LOG     ✓ Compiled in 222ms
+[00:02:05.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:07.631] Browser LOG     Scene already initialized with this configuration, skipping...
+[00:02:20.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:23.477] Browser LOG     Scene already initialized with this configuration, skipping...
+[00:02:29.631] Browser LOG     Scene already initialized with this configuration, skipping...
+[00:02:55.824] Server  LOG     ✓ Compiled in 190ms
+[00:03:09.776] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:23.820] Server  ERROR   (node:9144) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:03:37.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:37.996] Browser INFO    [TronLink] TronWeb is already initiated. TronLink will overwrite the current instance
+[00:03:37.996] Browser INFO    Provider initialised
+[00:03:37.996] Browser INFO    Provider initialised
+[00:03:37.996] Browser INFO    Provider initialised
+[00:03:37.996] Browser INFO    TronLink initiated
+[00:03:43.397] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:43.746] Browser INFO    [TronLink] TronWeb is already initiated. TronLink will overwrite the current instance
+[00:03:43.746] Browser INFO    Provider initialised
+[00:03:43.746] Browser INFO    Provider initialised
+[00:03:43.746] Browser INFO    Provider initialised
+[00:03:43.746] Browser INFO    TronLink initiated
+[00:03:44.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:04.750] Server  ERROR   Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaarth\Documents\cityboy\aegis_sre\app'
+[00:06:04.754] Server  ERROR   ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaarth\Documents\cityboy\aegis_sre\app'
+[00:06:04.757] Server  ERROR   ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir 'C:\Users\Gaarth\Documents\cityboy\aegis_sre\app'

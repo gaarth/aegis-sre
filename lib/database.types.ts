@@ -206,6 +206,39 @@ export type Database = {
                 };
                 Relationships: [];
             };
+
+            simulation_state: {
+                Row: {
+                    id: string;
+                    api_health: string;
+                    cdn_status: string;
+                    db_latency: number;
+                    webhook_valid: boolean;
+                    cache_fresh: boolean;
+                    active_chaos: Json;
+                    updated_at: string;
+                };
+                Insert: {
+                    id?: string;
+                    api_health?: string;
+                    cdn_status?: string;
+                    db_latency?: number;
+                    webhook_valid?: boolean;
+                    cache_fresh?: boolean;
+                    active_chaos?: Json;
+                    updated_at?: string;
+                };
+                Update: {
+                    api_health?: string;
+                    cdn_status?: string;
+                    db_latency?: number;
+                    webhook_valid?: boolean;
+                    cache_fresh?: boolean;
+                    active_chaos?: Json;
+                    updated_at?: string;
+                };
+                Relationships: [];
+            };
         };
 
         Views: Record<string, never>;

@@ -14,7 +14,6 @@ import {
     type ChaosEvent, type AlternativeFix,
     getEventById,
     PRODUCTS,
-    CUSTOMER_SENTIMENTS,
 } from '@/lib/simulation';
 import CRMPanel from './components/CRMPanel';
 import MetricsPanel from './components/MetricsPanel';
@@ -133,14 +132,21 @@ function SentinelOverlay({ activeChaos, onHeal, autonomous, onToggleAutonomous }
         setThoughts(prev => [...prev, { id: Date.now() + Math.random(), text, type, ts: Date.now() }]);
     }, []);
 
-    // Autonomous mode: auto-heal LOW and MEDIUM events
+    // Autonomous mode: auto-heal LOW/MEDIUM, detect HIGH and present for approval
     useEffect(() => {
         if (!autonomous || activeChaos.length === 0) return;
-        const autoHeal = async () => {
+        const autoProcess = async () => {
+            const highEvents: ChaosEvent[] = [];
             for (const id of activeChaos) {
                 if (autoHealedRef.current.has(id)) continue;
                 const ev = getEventById(id);
-                if (!ev || ev.level === 'HIGH') continue;
+                if (!ev) continue;
+                if (ev.level === 'HIGH') {
+                    // Queue HIGH for approval instead of skipping
+                    highEvents.push(ev);
+                    autoHealedRef.current.add(id); // Mark as processed so we don't re-queue
+                    continue;
+                }
                 autoHealedRef.current.add(id);
                 addThought(`[AUTO] Detected: ${ev.label} [${ev.impactLabel}]`, 'detected');
                 await new Promise(r => setTimeout(r, 600));
@@ -149,8 +155,28 @@ function SentinelOverlay({ activeChaos, onHeal, autonomous, onToggleAutonomous }
                 await new Promise(r => setTimeout(r, 400));
                 addThought(`[AUTO] ✅ Resolved: ${ev.label}`, 'resolved');
             }
+            // Present HIGH events for manual approval
+            if (highEvents.length > 0) {
+                for (const ev of highEvents) {
+                    addThought(`[AUTO] ⚠️ HIGH RISK Detected: ${ev.label}`, 'detected');
+                    await new Promise(r => setTimeout(r, 500));
+                    addThought(`[AUTO] RCA: ${ev.description}`, 'analyzing');
+                    await new Promise(r => setTimeout(r, 400));
+                    const conf = Math.round(85 + Math.random() * 12);
+                    addThought(`[AUTO] Pattern matched: ${conf}% confidence → ${ev.healLabel}`, 'analyzing');
+                    await new Promise(r => setTimeout(r, 300));
+                }
+                addThought(`[AUTO] ⚠️ ${highEvents.length} HIGH RISK event${highEvents.length > 1 ? 's' : ''} require admin approval.`, 'action');
+                setPendingFixes(prev => [
+                    ...prev,
+                    ...highEvents.filter(ev => !prev.some(p => p.event.id === ev.id)).map(ev => ({
+                        event: ev,
+                        selectedFix: ev.alternativeFixes[0],
+                    })),
+                ]);
+            }
         };
-        const timer = setTimeout(autoHeal, 1500);
+        const timer = setTimeout(autoProcess, 1500);
         return () => clearTimeout(timer);
     }, [autonomous, activeChaos, onHeal, addThought]);
 
@@ -472,9 +498,6 @@ export default function DemoPage() {
         try { await fetch('/api/simulation/reset', { method: 'POST' }); } catch { }
     };
 
-    // Sentiments
-    const sentiments = hasActiveChaos ? CUSTOMER_SENTIMENTS.angry : CUSTOMER_SENTIMENTS.happy;
-
     return (
         <div className="min-h-screen bg-[#050508] text-white overflow-x-hidden">
             <ErrorOverlay visible={isDbDown && isCdnBroken && isApiDegraded} />
@@ -617,7 +640,7 @@ export default function DemoPage() {
 
                 {adminTab === 'crm' && (
                     <section>
-                        <CRMPanel hasChaos={hasActiveChaos} />
+                        <CRMPanel hasChaos={hasActiveChaos} activeChaosIds={activeChaos} />
                     </section>
                 )}
             </main>

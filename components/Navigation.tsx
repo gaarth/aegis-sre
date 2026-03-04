@@ -45,7 +45,7 @@ export function Navigation() {
                 </svg>
                 <button
                     onClick={() => handleClick("overview")}
-                    className="font-bold tracking-widest text-lg text-white hover:text-white cursor-pointer bg-transparent border-none"
+                    className="font-bold tracking-widest text-lg text-white hover:text-white cursor-pointer bg-transparent border-none aegis-logo"
                 >
                     AEGIS SRE
                 </button>

@@ -135,7 +135,7 @@ export default function DashboardPage() {
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
                         <Shield size={20} className="text-[#00D1FF]" />
-                        <span className="text-lg font-bold tracking-tight">AEGIS</span>
+                        <span className="text-lg font-bold tracking-tight aegis-logo">AEGIS</span>
                         <span className="text-zinc-600 text-sm font-mono">COMMAND CENTER</span>
                     </div>
                 </div>

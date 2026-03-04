@@ -73,7 +73,15 @@ export function LandingView({ onEnterAegis }: { onEnterAegis: () => void }) {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="flex flex-col items-center"
                     >
-                        <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter text-gradient mb-8 drop-shadow-2xl relative header-glow">
+                        <h1
+                            className="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 drop-shadow-2xl relative header-glow aegis-logo"
+                            style={{
+                                background: "linear-gradient(to top right, rgba(139, 120, 255, 0.7) 0%, rgba(180, 170, 240, 0.3) 30%, #ffffff 55%, #ffffff 100%)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                                backgroundClip: "text",
+                            }}
+                        >
                             AEGIS SRE
                         </h1>
                         <p className="text-xl md:text-2xl text-muted max-w-2xl text-center mb-12 font-medium tracking-wide">
@@ -153,7 +161,7 @@ export function LandingView({ onEnterAegis }: { onEnterAegis: () => void }) {
                             <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                                 <div className="flex-1">
                                     <div className="text-xs font-mono uppercase tracking-[0.3em] text-[#8B9FE8]/80 mb-4">Observe</div>
-                                    <h2 className="text-2xl md:text-3xl font-bold header-glow mb-3 tracking-tight text-white">Real-Time Telemetry</h2>
+                                    <h2 className="text-2xl md:text-3xl font-bold header-glow mb-3 tracking-tight text-white aegis-logo">Real-Time Telemetry</h2>
                                     <p className="text-muted leading-relaxed max-w-lg">
                                         Monitor telemetry, traces, and critical metrics across the entire architectural stack with sub-second precision.
                                     </p>
@@ -171,7 +179,7 @@ export function LandingView({ onEnterAegis }: { onEnterAegis: () => void }) {
                                 entryDelay={0.1}
                             >
                                 <div className="text-xs font-mono uppercase tracking-[0.3em] text-[#8B9FE8]/80 mb-4">Reason</div>
-                                <h2 className="text-2xl md:text-3xl font-bold header-glow mb-3 tracking-tight text-white">LLM-Powered Root Cause Analysis</h2>
+                                <h2 className="text-2xl md:text-3xl font-bold header-glow mb-3 tracking-tight text-white aegis-logo">LLM-Powered Root Cause Analysis</h2>
                                 <p className="text-muted leading-relaxed max-w-lg">
                                     Automate root cause analysis with LLM-powered insights, correlating spikes and anomalies instantaneously.
                                 </p>
@@ -185,7 +193,7 @@ export function LandingView({ onEnterAegis }: { onEnterAegis: () => void }) {
                                 entryDelay={0.2}
                             >
                                 <div className="text-xs font-mono uppercase tracking-[0.3em] text-[#8B9FE8]/80 mb-4">Act</div>
-                                <h2 className="text-2xl font-bold header-glow mb-3 tracking-tight text-white">Autonomous Remediation</h2>
+                                <h2 className="text-2xl font-bold header-glow mb-3 tracking-tight text-white aegis-logo">Autonomous Remediation</h2>
                                 <p className="text-muted leading-relaxed">
                                     Execute remediation workflows, scale infrastructure, or rollback deployments seamlessly.
                                 </p>

@@ -167,7 +167,7 @@ function StaircaseCard({
                     <div className="text-xs font-mono uppercase tracking-[0.3em] text-primary/80 mb-4">
                         {tier.label} ΓÇö Tier
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4 header-glow">
+                    <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4 header-glow aegis-logo">
                         {tier.title}
                     </h3>
                     <p className="text-muted text-sm md:text-base leading-relaxed max-w-lg">
@@ -338,7 +338,7 @@ export function ArchitectureSection() {
             {/* ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇ */}
             <ScrollReveal className="relative z-10 pt-24 pb-20 px-8">
                 <div className="max-w-5xl mx-auto text-center">
-                    <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-gradient mb-6 drop-shadow-2xl header-glow">
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-gradient mb-6 drop-shadow-2xl header-glow aegis-logo">
                         Architecture
                     </h1>
                     <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto tracking-wide font-medium">
@@ -391,7 +391,7 @@ export function ArchitectureSection() {
                             entryDelay={0.1}
                         >
                             <div className="relative z-10">
-                                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5 leading-[1.15] header-glow">
+                                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-5 leading-[1.15] header-glow aegis-logo">
                                     Closed-Loop<br />
                                     <span className="text-gray-500">Reliability Engine</span>
                                 </h2>
@@ -424,7 +424,7 @@ export function ArchitectureSection() {
                                 className="p-10 flex-[1.4] flex flex-col justify-center box-dna texture-b"
                                 entryDelay={0.2}
                             >
-                                <h3 className="text-xl font-bold text-white mb-3 header-glow">Extensible Pipeline</h3>
+                                <h3 className="text-xl font-bold text-white mb-3 header-glow aegis-logo">Extensible Pipeline</h3>
                                 <p className="text-muted text-sm leading-relaxed">
                                     Every tier exposes plugin interfaces ΓÇö custom anomaly
                                     detectors, bespoke reasoning modules, and organization-specific
@@ -436,7 +436,7 @@ export function ArchitectureSection() {
                                 className="p-10 flex-[0.6] flex flex-col justify-center box-dna texture-c"
                                 entryDelay={0.3}
                             >
-                                <h3 className="text-xl font-bold text-white mb-3 header-glow">Zero-Trust Execution</h3>
+                                <h3 className="text-xl font-bold text-white mb-3 header-glow aegis-logo">Zero-Trust Execution</h3>
                                 <p className="text-muted text-sm leading-relaxed">
                                     All remediation actions traverse an audit gateway with
                                     cryptographic provenance and approval chain verification.

@@ -1,14 +1,14 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 /**
- * Global Footer ΓÇö Contact & Information
+ * Global Footer - Contact & Information
  * 
  * Design: Minimalist, clean separator, Deep Space palette.
  * L-02 compliant: Has its own background, no bleed into Architecture.
- * L-06 compliant: Not a bento ΓÇö uses asymmetric 2-column split.
+ * L-06 compliant: Not a bento - uses asymmetric 2-column split.
  */
 export function Footer() {
     const [inquiry, setInquiry] = useState("");
@@ -49,7 +49,7 @@ export function Footer() {
             <div className="relative z-10 max-w-7xl mx-auto px-8 py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
-                    {/* Left Column ΓÇö Contact */}
+                    {/* Left Column - Contact */}
                     <div>
                         <div className="text-xs font-mono uppercase tracking-[0.3em] text-[#8B9FE8]/60 mb-6">
                             Get in Touch
@@ -69,7 +69,7 @@ export function Footer() {
                                 <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "rgba(139, 159, 232, 0.1)", border: "1px solid rgba(139, 159, 232, 0.15)" }}>
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B9FE8" strokeWidth="2" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                                 </div>
-                                <span className="text-muted text-sm tracking-wide">Cloud-Native ΓÇó Globally Distributed</span>
+                                <span className="text-muted text-sm tracking-wide">{"Cloud-Native \u00B7 Globally Distributed"}</span>
                             </div>
                         </div>
 
@@ -102,13 +102,13 @@ export function Footer() {
                                         color: "#8B9FE8",
                                     }}
                                 >
-                                    {submitted ? "Sent Γ£ô" : "Send"}
+                                    {submitted ? "Sent \u2714" : "Send"}
                                 </motion.button>
                             </div>
                         </form>
                     </div>
 
-                    {/* Right Column ΓÇö Information */}
+                    {/* Right Column - Information */}
                     <div className="grid grid-cols-2 gap-12">
                         {/* Sitemap */}
                         <div>
@@ -145,7 +145,7 @@ export function Footer() {
                             </div>
                             <ul className="space-y-3">
                                 <li>
-                                    <span className="text-sm text-gray-400 tracking-wide">AEGIS SRE Platform</span>
+                                    <span className="text-sm text-gray-400 tracking-wide"><span className="aegis-logo">AEGIS</span> SRE Platform</span>
                                 </li>
                                 <li>
                                     <span className="text-sm text-gray-400 tracking-wide">College Project 2026</span>
@@ -187,9 +187,9 @@ export function Footer() {
                             <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="currentColor" strokeWidth="1.5" fill="none" />
                             <path d="M12 7L7 10v4l5 3 5-3v-4l-5-3z" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.15" />
                         </svg>
-                        <span className="text-xs text-gray-600 tracking-wide">AEGIS SRE ΓÇö Autonomous Reliability Engineering</span>
+                        <span className="text-xs text-gray-600 tracking-wide"><span className="aegis-logo">AEGIS</span>{" SRE \u2014 Autonomous Reliability Engineering"}</span>
                     </div>
-                    <span className="text-xs text-gray-600 tracking-wide">┬⌐ 2026 AEGIS Project. All rights reserved.</span>
+                    <span className="text-xs text-gray-600 tracking-wide">{"\u00A9 2026 "}<span className="aegis-logo">AEGIS</span>{" Project. All rights reserved."}</span>
                 </div>
             </div>
         </footer>

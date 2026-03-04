@@ -283,7 +283,7 @@ function SentinelOverlay({ activeChaos, onHeal, autonomous, onToggleAutonomous }
         <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} className="fixed top-4 right-4 z-50 w-[380px]">
             <motion.button onClick={() => setIsOpen(!isOpen)} whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A0C10]/90 backdrop-blur-xl border border-[#00D1FF]/30 text-white text-sm font-semibold cursor-pointer ml-auto">
-                <ShieldCheck size={16} className="text-[#00D1FF]" /> AEGIS SENTINEL
+                <ShieldCheck size={16} className="text-[#00D1FF]" /> <span className="aegis-logo">AEGIS</span> SENTINEL
                 {autonomous && <span className="text-[9px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded-full font-mono">AUTO</span>}
                 {activeChaos.length > 0 && <span className="relative flex h-2 w-2 ml-1"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D1FF] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#00D1FF]" /></span>}
             </motion.button>
@@ -647,7 +647,7 @@ export default function DemoPage() {
 
             {/* Footer */}
             <footer className="px-8 py-4 border-t border-white/5 flex items-center justify-between text-[10px] text-zinc-600 font-mono">
-                <div className="flex items-center gap-2"><span className="text-white font-bold text-xs uppercase">SoleSource</span> AEGIS SRE SANDBOX v3.0</div>
+                <div className="flex items-center gap-2"><span className="text-white font-bold text-xs uppercase">SoleSource</span> <span className="aegis-logo">AEGIS</span> SRE SANDBOX v3.0</div>
                 <button onClick={() => window.location.href = '/dashboard'} className="text-zinc-500 hover:text-white transition-colors cursor-pointer flex items-center gap-1">← Return to Command Center</button>
             </footer>
         </div>

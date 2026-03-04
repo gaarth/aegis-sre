@@ -123,10 +123,10 @@ function CapabilityNode({ cap, index }: { cap: Capability; index: number }) {
                             onClick={() => setIsOpen(!isOpen)}
                             className={`text-left ${isEven ? "lg:text-right lg:ml-auto" : ""} group cursor-pointer bg-transparent border-none w-full`}
                         >
-                            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-1 header-glow inline">
+                            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-1 header-glow inline aegis-logo">
                                 {cap.title}
                             </h2>
-                            <span className="text-2xl md:text-3xl font-bold tracking-tight text-gray-500 block">
+                            <span className="text-2xl md:text-3xl font-bold tracking-tight text-gray-500 block aegis-logo">
                                 {cap.subtitle}
                             </span>
                             <div className="mt-3 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#8B9FE8]/40 group-hover:text-[#8B9FE8]/80 transition-colors"
@@ -260,7 +260,7 @@ export function CapabilitiesSection() {
             {/* ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇ */}
             <ScrollReveal className="relative z-10 pt-24 pb-20 px-8">
                 <div className="max-w-5xl mx-auto text-center">
-                    <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-gradient mb-6 drop-shadow-2xl header-glow">
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-gradient mb-6 drop-shadow-2xl header-glow aegis-logo">
                         Capabilities
                     </h1>
                     <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto tracking-wide font-medium">
